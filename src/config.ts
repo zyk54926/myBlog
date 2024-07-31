@@ -1,14 +1,15 @@
+export const BASE_URL:string = import.meta.env.BASE_URL
 export const siteConfig: SiteConfig = {
-    title: "Hi! Jazee",
+    title: "南风知我意",
     language: "zh",
-    description: "Jazee's personal blog. Powered by Astro Blog Theme Blur.",
-    keywords: "Jazee, blog, personal blog, Astro, Astro Blog Theme Blur",
-    author: "Jazee",
-    avatar: "/avatar.png",
-    favicon: "/favicon.png",
+    description: "前端，vue,astro,github,githun page",
+    keywords: "前端小白鼠",
+    author: "zyk❤ly",
+    avatar: `${BASE_URL}/avatar.png`,
+    favicon: `${BASE_URL}/favicon.png`,
     // 基于你的用户名的以下网址：https://<username>.github.io
-    site: "https://zyk54926.github.io",
-
+    site: "https://zykMyblog.com",
+    base:'/myBlog',
     page_size: 10,
 }
 
@@ -16,15 +17,15 @@ export const navBarConfig: NavBarConfig = {
     links: [
         {
             name: 'Projects',
-            url: '/projects'
+            url: `${BASE_URL}/projects`
         },
         {
             name: 'Links',
-            url: '/links'
+            url: `${BASE_URL}/links`
         },
         {
             name: 'About',
-            url: '/about'
+            url: `${BASE_URL}/about`
         }
     ]
 }
@@ -52,7 +53,7 @@ interface SiteConfig {
     avatar: string
     favicon: string
     site: string
-
+    base:string
     page_size: number
     twikoo_uri?: string     // https://twikoo.js.org/
 }
