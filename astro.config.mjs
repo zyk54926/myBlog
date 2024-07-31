@@ -9,6 +9,7 @@ import {siteConfig} from "./src/config";
 // https://astro.build/config
 export default defineConfig({
     site: siteConfig.site,
+    base: 'myBlog',
     integrations: [mdx(), sitemap(), tailwind({
         applyBaseStyles: false
     }), icon()],
