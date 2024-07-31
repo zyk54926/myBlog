@@ -6,7 +6,8 @@ export const siteConfig: SiteConfig = {
     author: "Jazee",
     avatar: "/avatar.png",
     favicon: "/favicon.png",
-    site: "https://jaze.top",
+    // 基于你的用户名的以下网址：https://<username>.github.io
+    site: "https://zykMyblog.com",
 
     page_size: 10,
 }
