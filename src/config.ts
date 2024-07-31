@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
     avatar: "/avatar.png",
     favicon: "/favicon.png",
     // 基于你的用户名的以下网址：https://<username>.github.io
-    site: "https://zykMyblog.com",
+    site: "https://zyk54926.github.io",
 
     page_size: 10,
 }
